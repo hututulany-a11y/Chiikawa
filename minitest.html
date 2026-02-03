@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+
+    <meta charset="utf-8">
+    <title>chiikawa劇情測試網站</title>
+
+
+  <center>
+   <h3>chiikawa劇情測試</h3>
+   </center>
+   Q1. chiikawa原型是什麼動物 ?<br>
+   <input type="radio" name="q1" id="ans1">🐹倉鼠🐹
+   <input type="radio" name="q1" id="ans2">🐱小貓🐱
+   <input type="radio" name="q1" id="ans3">🐻小熊🐻 
+   <button onclick="question1()">Submit</button>
+   <p id="results1">Correct!</p>
+   Q2. hachiware的准考證上的數字是 ?<br>
+   <input type="radio" name="q2" id="ans4">393
+   <input type="radio" name="q2" id="ans5">207
+   <input type="radio" name="q2" id="ans6">105 
+   <button onclick="question2()">Submit</button>
+   <p id="results2">Correct!</p>
+   Q1. kurimanju的興趣愛好是 ?<br>
+   <input type="radio" name="q1" id="ans7">看電影
+   <input type="radio" name="q1" id="ans8">登山
+   <input type="radio" name="q1" id="ans9">說相聲 
+   <button onclick="question3()">Submit</button>
+   <p id="results3">Oppps!<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzTih152aw1lHTfwpQUf7NnHprUEjBDmhsTQ&amp;s" width="20%"></p>
+ 
+
+
+                <script>function question1(){
+    var ans1 = document.getElementById("ans1");
+    var ans2 = document.getElementById("ans2");
+    var ans3 = document.getElementById("ans3");
+
+    if(ans1.checked){
+        document.getElementById("results1").
+        innerText = "Correct!";
+    }else if(ans2.checked || ans3.checked){
+        document.getElementById("results1").innerHTML = "Oppps!<img src='https://i.redd.it/emha17vry65f1.jpeg' width='20%'>";
+    }
+
+}
+function question2(){
+    var ans4 = document.getElementById("ans4");
+    var ans5 = document.getElementById("ans5");
+    var ans6 = document.getElementById("ans6");
+
+    if(ans6.checked){
+        document.getElementById("results2").
+        innerText = "Correct!";
+    }else if(ans4.checked || ans5.checked){
+        document.getElementById("results2").innerHTML = "Oppps!<img src='https://i0.wp.com/chiikawahk.com/wp-content/uploads/2024/01/image-20-1024x574.png?resize=1024%2C574&ssl=1' width='20%'>";
+
+
+    }
+
+}
+function question3(){
+    var ans7 = document.getElementById("ans7");
+    var ans8 = document.getElementById("ans8");
+    var ans9 = document.getElementById("ans9");
+
+    if(ans8.checked){
+        document.getElementById("results3").
+        innerText = "Correct!";
+    }else if(ans7.checked || ans9.checked){
+        document.getElementById("results3").innerHTML = "Oppps!<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzTih152aw1lHTfwpQUf7NnHprUEjBDmhsTQ&s' width='20%'>";
+        
+
+
+    }
+
+}
+
+
+
+
+
+</script>
+            
+        
+    </body>
